@@ -1,7 +1,7 @@
 if SHIELD_SHIRONEKO_LEFT
 
 # Name must be less than 16 characters long!
-config ZMK_SHIRONEKO
+config ZMK_KEYBOARD_NAME
     default "Shiro Neko"
 
 config ZMK_SPLIT_ROLE_CENTRAL
