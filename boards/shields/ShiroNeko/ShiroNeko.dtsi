@@ -1,5 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h> 
 / {
+     chosen {
+        zmk,physical-layout = &default_layout;
+        // Other chosen items
+    };
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
@@ -26,8 +30,7 @@
             RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)    RC(2,7) RC(2,8) RC(2,9) RC(2,10) RC(2,11) RC(2,12)
         >;
     };
-    
-    {
+
     default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
