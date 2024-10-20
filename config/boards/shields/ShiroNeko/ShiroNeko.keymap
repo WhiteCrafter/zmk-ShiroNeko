@@ -1,6 +1,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -50,7 +52,7 @@
                 &kp F1   &kp F2       &kp F3       &kp F4       &kp F5       &kp F6              &kp I   &kp I   &kp I   &kp I   &kp I   &kp I 
                 &kp I   &to 1       &to 2       &kp I       &kp I       &kp I               &kp I   &kp I   &kp I   &kp I   &kp I   &kp I 
                 &kp I   &kp I       &kp I       &kp I       &kp I       &kp I               &kp I   &kp I   &kp I   &kp I   &kp I   &kp I 
-                &kp I  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &kp I               &kp I   &kp I   &kp I   &kp I   &kp I   &kp I 
+                &kp I  &none     &none          &none   &none       &kp I               &kp I   &kp I   &kp I   &kp I   &kp I   &kp I 
                                     &kp I       &kp I   &kp I   &kp I               &kp I   &kp I   &kp I   &kp I
 
             >;
