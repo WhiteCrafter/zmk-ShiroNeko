@@ -1,0 +1,44 @@
+#include <dt-bindings/zmk/keys.h>
+#include <behaviors.dtsi>
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer { // Layer 0
+            // -------------------------------------
+            // |     Z     |     M     |     K     |
+            // |     A     |     B     |     C     |
+            // |     D     |     E     |     F     |
+            bindings = <
+                &gresc      &kp N1   &kp N2   &kp N3   &kp N4   &kp N5  &kp N6  &kp N7  &kp N8      &kp N9  &kp N0      &kp BACKSPACE
+                &kp TAB     &kp Q    &kp W    &kp E    &kp R    &kp T   &kp Y   &kp U   &kp I       &kp O   &kp P       &kp BACKSLASH
+                &kp LSHFT   &kp A    &kp S    &kp D    &kp F    &kp G   &kp H   &kp J   &kp K       &kp L   &kp SEMI    &kp ENTER
+                &kp LCTRL   &kp Z    &kp X    &kp C    &kp V    &kp B   &kp N   &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT  
+            >;
+        };
+        league { // Layer 0
+            // -------------------------------------
+            // |     Z     |     M     |     K     |
+            // |     A     |     B     |     C     |
+            // |     D     |     E     |     F     |
+            bindings = <
+                &gresc      &kp N1   &kp N2   &kp N3   &kp N4   &kp N5  &kp N6  &kp N7  &kp N8      &kp N9  &kp N0      &kp BACKSPACE
+                &kp TAB     &kp A    &kp Q    &kp W    &kp E    &kp R   &kp Y   &kp U   &kp I       &kp O   &kp P       &kp BACKSLASH
+                &kp LSHFT   &kp A    &kp S    &kp D    &kp D    &kp F   &kp H   &kp J   &kp K       &kp L   &kp SEMI    &kp ENTER
+                &kp LCTRL   &kp Z    &kp X    &kp C    &kp V    &kp B   &kp N   &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT  
+            >;
+        };
+        wast { // Layer 0
+            // -------------------------------------
+            // |     Z     |     M     |     K     |
+            // |     A     |     B     |     C     |
+            // |     D     |     E     |     F     |
+            bindings = <
+                &gresc      &kp Q    &kp N1   &kp N2   &kp N3   &kp N4  &kp N5  &kp N7  &kp N8      &kp N9  &kp N0      &kp BACKSPACE
+                &kp TAB     &kp A    &kp W    &kp E    &kp R    &kp T   &kp Y   &kp U   &kp I       &kp O   &kp P       &kp BACKSLASH
+                &kp LSHFT   &kp I    &kp S    &kp D    &kp F    &kp G   &kp H   &kp J   &kp K       &kp L   &kp SEMI    &kp ENTER
+                &kp LCTRL   &kp Z    &kp X    &kp C    &kp V    &kp B   &kp N   &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT  
+            >;
+        };
+    };
+ };
