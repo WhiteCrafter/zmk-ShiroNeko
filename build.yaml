@@ -19,6 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: ShiorNeko_left
+    shield: ShiroNeko_left
   - board: nice_nano_v2
     shield: ShiroNeko_right
