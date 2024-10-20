@@ -1,7 +1,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <behaviors.dtsi>
-
-
+#include <dt-bindings/zmk/bt.h>
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -42,18 +41,8 @@
                 &gresc      &kp Q    &kp N1   &kp N2   &kp N3   &kp N4          &kp N5  &kp N6  &kp N7      &kp N8  &kp N9      &kp BACKSPACE
                 &kp TAB     &kp A    &kp W    &kp E    &kp R    &kp T           &kp Y   &kp U   &kp I       &kp O   &kp N0      &kp BACKSLASH
                 &kp LSHFT   &kp I    &kp S    &kp D    &kp F    &kp G           &kp H   &kp J   &kp K       &kp L   &kp SEMI    &kp ENTER
-                &kp LCTRL   &kp P    &to 3    &kp C    &kp V    &kp B           &kp N   &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT  
-                                     &kp M  &kp J  &kp LALT  &kp SPACE       &kp SPACE   &kp RALT   &kp    &kp DOT 
-            >;
-        };
-        modkeys { //modifier keys
-            bindings = <
-                &kp F1   &kp F2       &kp F3       &kp F4       &kp F5       &kp F6              &kp I   &kp I   &kp I   &kp I   &kp I   &kp I 
-                &kp I   &to 1       &to 2       &kp I       &kp I       &kp I               &kp I   &kp I   &kp I   &kp I   &kp I   &kp I 
-                &kp I   &kp I       &kp I       &kp I       &kp I       &kp I               &kp I   &kp I   &kp I   &kp I   &kp I   &kp I 
-                &kp I  &kp I     &kp I          &kp I  &kp I       &kp I               &kp I   &kp I   &kp I   &kp I   &kp I   &kp I 
-                                    &to 0       &kp I   &kp I   &kp I               &kp I   &kp I   &kp I   &kp I
-
+                &kp LCTRL   &kp P    &to 1    &bt BT_SEL 0   &kp V    &kp B           &kp N   &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT  
+                                     &kp M  &kp J  &kp LALT  &kp SPACE       &kp SPACE   &kp RALT   &kp RWIN    &kp DOT 
             >;
         };
     };
