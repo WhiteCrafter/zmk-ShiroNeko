@@ -70,7 +70,7 @@
                 &kp TAB     &kp A    &kp W    &kp E    &kp R    &kp T           &kp Y   &kp U   &kp I       &kp O   &kp N0      &kp BACKSLASH
                 &kp LSHFT   &kp I    &kp S    &kp D    &kp F    &kp G           &kp H   &kp J   &kp K       &kp L   &kp SEMI    &kp ENTER
                 &kp LCTRL   &kp P    &kp x    &kp C   &kp V    &kp B           &kp N   &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT  
-                                     &lt 3 M   &kp J  &kp LALT  &kp SPACE       &kp SPACE   &kp RALT   &kp RWIN    &kp DOT 
+                                     &to 0   &kp J  &kp LALT  &kp SPACE       &kp SPACE   &kp RALT   &kp RWIN    &kp DOT 
             >;
         };
         functal { // Layer 0
