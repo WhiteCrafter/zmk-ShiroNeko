@@ -18,15 +18,15 @@
         //     flavor = "hold-preferred";
         //     bindings = <&caps_word>, <&kp TAB>;
         // };
-        // tlt: layer-tap-by-hold-tap {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "LAYER_TAP_BY_HOLD_TAP";
-        //     #binding-cells = <2>;
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <0>;
-        //     flavor = "tap-preferred";
-        //     bindings = <&to>, <&kp>;
-        // };
+        tlt: layer-tap-by-hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_BY_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&to>, <&kp>;
+        };
         
         
     };
