@@ -44,8 +44,8 @@
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
             bindings = <
-                &gresc      &kp N1  &kp N2  &kp N3  &kp N4   &kp N5         &kp N6  &kp N7  &kp N8      &kp N9  &kp N0      &kp BACKSPACE
-                &kp TAB     &kp Q   &kp W   &kp E   &kp R    &kp T          &kp Y   &kp U   &kp I       &kp O   &kp P       &kp DEL    
+                &gresc      &kp N1  &kp N2  &kp N3  &kp N4   &kp N5         &kp N6  &kp N7  &kp N8      &kp N9  &kp N0      &kp DEL
+                &kp TAB     &kp Q   &kp W   &kp E   &kp R    &kp T          &kp Y   &kp U   &kp I       &kp O   &kp P       &kp BACKSPACE
                 &kp LSHFT   &kp A   &kp S   &kp D   &kp F    &kp G          &kp H   &kp J   &kp K       &kp L   &kp SEMI    &mt LSHFT ENTER
                 &kp LCTRL   &kp Z   &kp X   &kp C   &kp V    &kp B          &kp N   &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT  
                                     &mo FUN &kp LWIN  &kp LALT &kp SPACE      &kp SPACE   &kp RALT   &kp RCTRL   &kp RWIN 
@@ -70,11 +70,11 @@
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
             bindings = <
-                &gresc      &kp Q    &kp N1     &kp N2  &kp N3  &kp N4          &kp N5  &kp N6  &kp N7      &kp N8  &kp N9      &kp BACKSPACE
-                &kp TAB     &kp A    &kp W      &kp E   &kp R   &kp T           &kp Y   &kp U   &kp I       &kp O   &kp N0      &kp BACKSLASH
-                &kp LSHFT   &kp I    &kp S      &kp D   &kp F   &kp G           &kp H   &kp J   &kp K       &kp L   &kp SEMI    &kp ENTER
-                &kp LCTRL   &kp P    &tlt 0  X  &kp C   &kp V   &kp B           &kp N   &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT  
-                                     &kp M  &kp J  &kp LALT  &kp SPACE       &kp SPACE   &kp RALT   &kp RWIN    &kp DOT 
+                &gresc      &kp Q    &kp N1     &kp N2  &kp N3  &kp N4          &kp N5      &kp N6  &kp N7      &kp N8  &kp N9      &kp BACKSPACE
+                &kp TAB     &kp A    &kp W      &kp E   &kp R   &kp T           &kp Y       &kp U   &kp I       &kp O   &kp N0      &kp BACKSLASH
+                &kp LSHFT   &kp I    &kp S      &kp D   &kp F   &kp G           &kp H       &kp J   &kp K       &kp L   &kp SEMI    &kp ENTER
+                &kp LCTRL   &kp P    &tlt 0  X  &kp C   &kp V   &kp B           &kp N       &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT  
+                                     &kp M  &kp J  &kp LALT  &kp SPACE          &kp SPACE   &kp RALT   &kp RWIN    &kp DOT 
             >;
         };
         functal { // Layer 0
@@ -92,15 +92,15 @@
         };
         extras { // Layer 4
             // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
+            //  |    F1     |     F2    |     F3    |    F4     |     F5    |           |     F6    |     F7    |     F2    |     F3    |     F1    |     F2    |     F3    |
+            //  |     A     |     B     |     C     |
+            //  |     D     |     E     |     F     |
             bindings = <
-                &kp F1  &kp F2   &kp F3   &kp F4    &kp F5  &kp F6                          &kp F7  &kp F8          &kp F9          &kp F10         &kp F11 &kp F12
-                &none   &to 0    &to 1    &to 2     &none   &none                           &none   &none           &kp UP_ARROW    &none           &none   &none
-                &none   &none    &none    &none     &bt BT_CLR_ALL   &bt BT_CLR             &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW &none   &none
-                &sk LALT &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none          &none   &none           &none           &none           &none   &none  
-                                 &none    &none     &kp LALT   &kp ENTER                    &none   &none           &none           &none 
+                &kp F1      &kp F2      &kp F3  &kp F4      &kp F5      &kp F6                  &kp F7      &kp F8      &kp F9      &kp F10     &kp MINUS   &kp EQUAL
+                &none       &kp EXCL    &kp AT  &kp HASH    &kp DLLR    &kp PRCNT               &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR    &kp MINUSl
+                &kp RSHIFT  &none       &none   &kp LBRC    &kp RBRC    &kp LBKT                &kp RBKT    &kp LT      &kp GT      &kp EQUAL   &kp APOS    &kp RSHIFT
+                &sk LALT    &none       &none   &none       &none       &kp SLASH               &kp BSLH    &none       &none           &none   &none       &none
+                                        &none   &none       &kp LALT    &kp ENTER               &none       &none       &none           &none 
             >;
         };
     };
