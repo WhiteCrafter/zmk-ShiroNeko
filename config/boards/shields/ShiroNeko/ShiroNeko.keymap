@@ -13,15 +13,15 @@
             tapping-term-ms = <200>;
             bindings = <&kp TAB>, <&caps_word>;
         };
-        tabsl: mod-tap-by-hold-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP_BY_HOLD_TAP";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <10>;
-            flavor = "hold-preferred";
-            bindings = <&caps_word>, <&kp TAB>;
-        };
+        // tabsl: mod-tap-by-hold-tap {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "MOD_TAP_BY_HOLD_TAP";
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <200>;
+        //     quick-tap-ms = <10>;
+        //     flavor = "hold-preferred";
+        //     bindings = <&caps_word>, <&kp TAB>;
+        // };
         tlt: layer-tap-by-hold-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_BY_HOLD_TAP";
