@@ -1,6 +1,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#define LOL 1
+#define WASD 2
+#define FUN 3
+#define EXTRA 4
 / {
     behaviors {
         td0: tap_dance_0 {
