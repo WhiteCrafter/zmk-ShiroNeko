@@ -5,7 +5,18 @@
 #define WASD 2
 #define FUN 3
 #define EXTRA 4
+#define CHAT 5
 / {
+    macros {
+        tgchat: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &tog CHAT>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+    };
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -31,6 +42,7 @@
             flavor = "tap-preferred";
             bindings = <&to>, <&kp>;
         };
+        
         
         
     };
@@ -59,7 +71,7 @@
             bindings = <
                 &gresc      &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &kp N6      &kp N7  &kp N8      &kp N9  &kp N0      &kp BACKSPACE
                 &kp TAB     &kp A   &kp Q   &kp W   &kp E   &kp R           &kp Y       &kp U   &kp I       &kp O   &kp P       &kp BACKSLASH
-                &kp LCTRL   &kp P   &kp A   &kp D   &kp D   &kp F           &kp H       &kp J   &kp K       &kp L   &kp SEMI    &kp ENTER
+                &kp LCTRL   &kp P   &kp A   &kp D   &kp D   &kp F           &kp H       &kp J   &kp K       &kp L   &kp SEMI    &tgchat 
                 &kp LSHIFT  &kp Z   &kp X   &kp C   &kp V   &kp B           &kp N       &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT 
                                     &to 0   &kp T  &kp LALT  &kp SPACE      &kp SPACE   &kp RALT   &kp RCTRL   &kp RWIN 
             >;
@@ -101,6 +113,19 @@
                 &kp RSHIFT  &kp DQT     &none   &kp LBRC    &kp RBRC    &kp LBKT                &kp RBKT    &kp LPAR    &kp RPAR    &kp EQUAL   &kp APOS    &kp RSHIFT
                 &sk LALT    &none       &none   &none       &none       &kp SLASH               &kp BSLH    &kp MINUS   &kp PLUS    &none       &none       &none
                                         &none   &none       &kp LALT    &kp ENTER               &none       &none       &none       &none 
+            >;
+        };
+        chat { // Layer 0
+            // -------------------------------------
+            // |     Z     |     M     |     K     |
+            // |     A     |     B     |     C     |
+            // |     D     |     E     |     F     |
+            bindings = <
+                &tog CHAT   &kp N1  &kp N2  &kp N3      &kp N4   &kp N5             &kp N6  &kp N7  &kp N8      &kp N9  &kp N0      &kp DEL
+                &kp TAB     &kp Q   &kp W   &kp E       &kp R    &kp T              &kp Y   &kp U   &kp I       &kp O   &kp P       &kp BACKSPACE
+                &kp LSHFT   &kp A   &kp S   &kp D       &kp F    &kp G              &kp H   &kp J   &kp K       &kp L   &kp SEMI    &tgchat
+                &kp LCTRL   &kp Z   &kp X   &kp C       &kp V    &kp B              &kp N   &kp M   &kp COMMA   &kp DOT &kp SLASH   &kp LSHFT  
+                                    &mo FUN &kp LWIN    &kp LALT &kp SPACE          &mo EXTRA   &kp RALT   &kp RCTRL   &caps_word 
             >;
         };
     };
