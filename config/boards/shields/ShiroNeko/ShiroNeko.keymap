@@ -133,8 +133,8 @@
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
             bindings = <
-                &kp F1  &kp F2   &kp F3   &kp F4    &kp F5  &kp F6                          &kp F7  &kp F8          &kp F9          &kp F10         &kp F11 &kp F12
-                &kp CAPS &to 0    &to 1    &to 2     &to 6   &to 7                           &none   &none           &kp UP_ARROW    &none           &none   &none
+                &kp F1  &kp F2  &kp F3      &kp F4      &kp F5      &kp F6                  &kp F7  &kp F8          &kp F9          &kp F10         &kp F11 &kp F12
+                &kp CAPS &to 0  &to LOL     &to WASD    &to 2       &to 1                   &none   &none           &kp UP_ARROW    &none           &none   &none
                 &none   &none    &none    &none     &bt BT_CLR_ALL   &bt BT_CLR             &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW &none   &none
                 &sk LALT &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none          &none   &none           &none           &none           &none   &none  
                                  &none    &none     &kp LALT   &kp ENTER                    &none   &none           &none           &none 
