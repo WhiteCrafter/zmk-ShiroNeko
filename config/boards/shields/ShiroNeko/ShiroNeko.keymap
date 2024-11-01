@@ -161,11 +161,11 @@
 
         dvorak { // layer 7
             bindings = <
-                &gresc      &kp N1      &kp N2      &kp N3      &kp N4   &kp N5             &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp DEL
-                &kp TAB     &kp APOS    &kp COMMA   &kp DOT     &kp P    &kp Y              &kp X       &kp G       &kp C       &kp R       &kp L       &kp BACKSPACE
-                &kp LSHFT   &kp A       &kp O       &kp E       &kp U    &kp I              &kp D       &kp H       &kp T       &kp N       &kp S       &mt RSHFT ENTER
-                &kp LCTRL   &kp SEMI    &kp Q       &kp J       &kp K    &kp F              &kp B       &kp M       &kp W       &kp V       &kp Z       &kp LSHFT  
-                                        &mo FUN     &kp LWIN    &kp LALT &kp SPACE          &mo EXTRA   &kp RALT    &kp RCTRL   &caps_word 
+                &gresc      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5              &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp DEL
+                &kp TAB     &kp APOS    &kp COMMA   &kp DOT     &kp P       &kp Y               &kp X       &kp G       &kp C       &kp R       &kp L       &kp BACKSPACE
+                &kp LSHFT   &kp A       &kp O       &kp E       &kp U       &kp I               &kp D       &kp H       &kp T       &kp N       &kp S       &mt RSHFT ENTER
+                &lm 0 LCTRL &kp SEMI    &kp Q       &kp J       &kp K       &kp F               &kp B       &kp M       &kp W       &kp V       &kp Z       &kp LSHFT  
+                                        &mo FUN     &lm 0 LWIN  &lm 0 LALT  &kp SPACE           &mo EXTRA   &lm 0 RALT  &caps_word  &kp RCTRL
             >;
         };
     };
