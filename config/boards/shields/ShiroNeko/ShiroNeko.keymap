@@ -16,6 +16,7 @@
                 , <&macro_tap &kp ENTER>
                 ;
         };
+        lm: lm {
     };
     behaviors {
         td0: tap_dance_0 {
