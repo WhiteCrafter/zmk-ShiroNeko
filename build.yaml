@@ -19,7 +19,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: ShiroNeko_left
+    shield: ShiroNeko_left    
+    snippet: studio-rpc-usb-uart
   - board: nice_nano_v2
     shield: ShiroNeko_right
   - board: nice_nano_v2
