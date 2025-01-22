@@ -67,11 +67,9 @@
             , <&key_physical_attrs 100 100 1152  412  (-500)     0     0>
             ;
     };
-    foostan_corne_lossless_position_map {
+    shironeko_possition_map {
         compatible = "zmk,physical-layout-position-map";
-
         complete;
-
         twelve_map: twelve {
             physical-layout = <&physical_layout0>;
             positions
