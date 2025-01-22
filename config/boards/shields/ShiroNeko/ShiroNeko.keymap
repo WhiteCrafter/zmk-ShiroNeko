@@ -66,10 +66,6 @@
         compatible = "zmk,keymap";
 
         default_layer { // Layer 0
-            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
             bindings = <
                 &gresc      &kp N1  &kp N2  &kp N3      &kp N4   &kp N5             &kp N6  &kp N7  &kp N8      &kp N9  &kp N0      &kp DEL
                 &kp TAB     &kp Q   &kp W   &kp E       &kp R    &kp T              &kp Y   &kp U   &kp I       &kp O   &kp P       &kp BACKSPACE
@@ -88,10 +84,6 @@
             >;
         };
         kitty { // Layer 2
-            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
             bindings = <
                 &gresc      &kp N1  &kp N2  &kp N3      &kp N4   &kp N5             &kp N6  &kp N7  &kp N8      &kp N9  &kp N0      &kp DEL
                 &kp TAB     &kp Q   &kp W   &kp E       &kp R    &kp T              &kp Y   &kp U   &kp I       &kp O   &kp P       &kp BACKSPACE
@@ -102,10 +94,6 @@
         };
 
         league { // Layer 3
-            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
             bindings = <
                 &gresc      &kp N5  &kp N1  &kp N2  &kp N3  &kp N4          &kp N6      &kp N7  &kp N8      &kp N9  &kp N0      &kp DELETE
                 &kp TAB     &kp A   &kp Q   &kp W   &kp E   &kp R           &kp Y       &kp U   &kp I       &kp O   &kp P       &kp BACKSPACE
@@ -115,10 +103,6 @@
             >;
         };
         game { // Layer 4
-            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
             bindings = <
                 &gresc      &kp Q    &kp N1     &kp N2  &kp N3      &kp N4          &kp N5      &kp N6      &kp N7          &kp N8              &kp N9              &tog CHAT
                 &kp TAB     &kp A    &kp W      &kp E   &kp R       &kp T           &kp Y       &kp U       &kp I           &kp UP_ARROW        &kp RIGHT_ARROW     &kp BACKSPACE
@@ -128,10 +112,6 @@
             >;
         };
         game2 { // Layer 5
-            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
             bindings = <
                 &kp N0      &kp N5   &kp N6     &kp N7      &kp N8    &kp N9            &kp N5      &kp N6  &kp N7      &kp N8  &kp N9      &kp DELETE
                 &kp TAB     &kp A    &kp W      &kp Y       &kp U     &kp O             &kp Y       &kp U   &kp I       &kp O   &kp N0      &kp BACKSPACE
@@ -141,10 +121,6 @@
             >;
         };
         functal { // Layer 6           
-            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
             bindings = <
                 &kp F1      &kp F2          &kp F3      &kp F4      &kp F5          &kp F6                  &kp F7  &kp F8          &kp F9          &kp F10         &kp F11 &kp F12
                 &kp CAPS    &to 0           &to LOL     &to GAME    &to 2           &to 1                   &none   &none           &kp UP_ARROW    &none           &none   &none
@@ -155,9 +131,11 @@
         };
         extras { // Layer 7
             // -------------------------------------
-            //  |    F1     |     F2    |     F3    |    F4     | 
-            //  |     A     |     B     |     C     |
-            //  |     D     |     E     |     F     |
+            //  |     F1    |   F2  |   F3  |   F4  |   F5  |   F6  |                   |   F7  |   F8  |   F9  |  F10  |  F11  |     =     |
+            //  |    TAB    |   !   |   @   |   #   |   $   |   %   |                   |   ^   |   &   |   *   |   <   |   >   |     -     |
+            //  |   RSHIFT  |       |       |   {   |   }   |   [   |   -------------   |   ]   |   (   |   )   |   =   |   '   |   LSHIFT  |
+            //  |   RCTRL   |       |       |       |       |   [   |                   |   \   |   -   |   -   |   +   |       |           |
+            //                      |       |       |  LALT |  ' '  |                   |       |       |       |       |
             bindings = <
                 &kp F1      &kp F2      &kp F3  &kp F4      &kp F5      &kp F6                  &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp EQUAL
                 &kp TAB     &kp EXCL    &kp AT  &kp HASH    &kp DLLR    &kp PRCNT               &kp CARET   &kp AMPS    &kp STAR    &kp LT      &kp GT      &kp MINUS
@@ -167,10 +145,6 @@
             >;
         };
         chat { // layer  8 for in game chat
-            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
             bindings = <
                 &tog CHAT   &kp N1  &kp N2  &kp N3      &kp N4   &kp N5             &kp N6  &kp N7  &kp N8      &kp N9  &kp N0      &kp ENTER
                 &kp TAB     &kp Q   &kp W   &kp E       &kp R    &kp T              &kp Y   &kp U   &kp I       &kp O   &kp P       &kp BACKSPACE
@@ -181,9 +155,6 @@
         };
                 
         qwerty { // Layer 9            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
             bindings = <
                 &gresc      &kp N1  &kp N2  &kp N3      &kp N4   &kp N5             &kp N6  &kp N7  &kp N8      &kp N9  &kp N0      &kp DEL
                 &kp TAB     &kp Q   &kp W   &kp E       &kp R    &kp T              &kp Y   &kp U   &kp I       &kp O   &kp P       &kp BACKSPACE
