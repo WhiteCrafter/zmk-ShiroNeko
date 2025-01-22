@@ -1,5 +1,5 @@
 #include "ShiroNeko.dtsi" // The shared dtsi file is included in the overlay
-
+#include "ShiroNeko-layouts.dtsi"
 // Label of the kscan node in the dtsi
 &kscan0 {
     col-gpios
