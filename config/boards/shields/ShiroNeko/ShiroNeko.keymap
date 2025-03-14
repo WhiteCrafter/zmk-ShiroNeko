@@ -70,6 +70,7 @@
             flavor = "tap-preferred";
             bindings = <&kp RSHIFT> <&tgchat>;
         }
+        // chat_enter: chat_tg_shift{
         
         
     };
