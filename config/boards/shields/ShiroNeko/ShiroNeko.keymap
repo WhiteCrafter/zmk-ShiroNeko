@@ -10,7 +10,7 @@
 #define MATH 10
 / {
     macros {
-        tgchat: zed_em_kay {
+        tgchat: chat_toggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -60,6 +60,16 @@
             bindings = <&to>, <&kp>;
         };
         
+        
+        chat_enter: chat_tg_shift{
+            compatible = "zmk,behavior-macro";
+            label = "SHIFT_AND_CHATTG";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp RSHIFT> <&tgchat>
+        }
         
         
     };
